@@ -21,9 +21,11 @@ const formEl = document.querySelector("form")
     else if (age.value >= 65) {
         finalPrice = finalPrice * 0.60} 
 
-console.log(finalPrice);
+    const getPrice = document.getElementById("price")
+    getPrice.innerHTML = `km ${km.value}  Età ${age.value} Prezzo finale ${finalPrice.toFixed(2)}`
 
-})
+}) 
+
 
 
 
